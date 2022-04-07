@@ -22,7 +22,7 @@ const Home: NextPage = () => {
             </button>
           </div>
         </nav>
-        <div className="mt-28 flex items-center">
+        <main className="mt-28 flex items-center">
           <div className="w-6/12 flex-col text-gray-50">
             <div className="font-heading text-7xl font-bold">
               <h1>We make</h1>
@@ -55,7 +55,16 @@ const Home: NextPage = () => {
               objectFit="contain"
             ></Image>
           </div>
-        </div>
+        </main>
+        <footer className="mt-12 flex justify-end gap-2  tracking-widest text-gray-600">
+          <a
+            href="https://id.wikipedia.org/wiki/Daerah_Istimewa_Yogyakarta"
+            target={'_blank'}
+            rel="noreferrer"
+          >
+            Made with ☕️ from JOG
+          </a>
+        </footer>
       </div>
     </div>
   )
