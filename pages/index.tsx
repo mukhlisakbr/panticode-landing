@@ -17,9 +17,15 @@ const Home: NextPage = () => {
             </a>
           </div>
           <div>
-            <button className="flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-400 to-emerald-400 py-3 px-8 text-2xl font-bold tracking-tight text-gray-50">
-              <Image src={GooglePlayIcon} alt="Icon"></Image>find us.
-            </button>
+            <a
+              href="https://play.google.com/store/apps/dev?id=6540392924092933918"
+              target={'_blank'}
+              rel="noreferrer"
+            >
+              <button className="flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-400 to-emerald-400 py-3 px-8 text-2xl font-bold tracking-tight text-gray-50">
+                <Image src={GooglePlayIcon} alt="Icon"></Image>find us.
+              </button>
+            </a>
           </div>
         </nav>
         <main className="mt-28 flex items-center">
@@ -38,10 +44,14 @@ const Home: NextPage = () => {
                 POWERED BY THE LATEST TECHNOLOGY IN THE INDUSTRY
               </div>
               <div className="mt-4 flex gap-2">
-                <a href="#">
+                <a
+                  href="https://reactnative.dev/"
+                  target={'_blank'}
+                  rel="noreferrer"
+                >
                   <Image src={ReactNativeLogo} alt="React Native"></Image>
                 </a>
-                <a href="#">
+                <a href="https://expo.dev/" target={'_blank'} rel="noreferrer">
                   <Image src={ExpoLogo} alt="Expo"></Image>
                 </a>
               </div>
