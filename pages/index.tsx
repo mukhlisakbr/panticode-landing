@@ -17,7 +17,7 @@ const Home: NextPage = () => {
       <div className="min-h-screen bg-black">
         <div className="mx-auto max-w-7xl px-8 py-12">
           <nav className="flex items-center justify-between">
-            <div className="relative h-12 w-6/12 md:h-20 md:w-64">
+            <div className="relative flex h-14 w-44 justify-start md:h-20 md:w-64">
               <a href="#">
                 <Image
                   src={Logo}
@@ -100,7 +100,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden w-6/12 justify-end md:block">
+            <div className="hidden w-6/12 justify-end md:flex">
               <Image
                 src={Hero}
                 alt="Hero"
