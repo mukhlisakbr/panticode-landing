@@ -1,24 +1,61 @@
 import type { NextPage } from 'next'
 import Image from 'next/image'
-import Logo from './../public/logo.webp'
+import Logo from './../public/logo.png'
 import GooglePlayIcon from './../public/google-play-icon.png'
+import Hero from './../public/hero.png'
+import ReactNativeLogo from './../public/react-native.png'
+import ExpoLogo from './../public/expo.png'
 
 const Home: NextPage = () => {
   return (
     <div className="min-h-screen bg-black">
-      <div className="mx-auto max-w-7xl border">
+      <div className="mx-auto max-w-7xl px-4 py-12">
         <nav className="flex items-center justify-between">
-          <div className="px-4 py-12">
+          <div className="">
             <a href="#">
               <Image src={Logo} alt="Logo"></Image>
             </a>
           </div>
           <div>
-            <button className="flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-400 to-emerald-400 py-4 px-8 text-3xl font-bold tracking-tight text-gray-50">
+            <button className="flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-400 to-emerald-400 py-3 px-8 text-2xl font-bold tracking-tight text-gray-50">
               <Image src={GooglePlayIcon} alt="Icon"></Image>find us.
             </button>
           </div>
         </nav>
+        <div className="mt-28 flex items-center">
+          <div className="w-6/12 flex-col text-gray-50">
+            <div className="font-heading text-7xl font-bold">
+              <h1>We make</h1>
+              <h1 className="bg-gradient-to-r from-blue-400 to-emerald-400 bg-clip-text text-transparent">
+                cool & fast apps.
+              </h1>
+            </div>
+            <div className="mt-8 text-xl ">
+              Committed to helping people with useful free apps.
+            </div>
+            <div>
+              <div className="mt-20 font-bold tracking-tight text-gray-600">
+                POWERED BY THE LATEST TECHNOLOGY IN THE INDUSTRY
+              </div>
+              <div className="mt-4 flex gap-2">
+                <a href="#">
+                  <Image src={ReactNativeLogo} alt="React Native"></Image>
+                </a>
+                <a href="#">
+                  <Image src={ExpoLogo} alt="Expo"></Image>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="flex w-6/12 justify-end ">
+            <Image
+              src={Hero}
+              alt="Hero"
+              width={500}
+              objectFit="contain"
+            ></Image>
+          </div>
+        </div>
       </div>
     </div>
   )
