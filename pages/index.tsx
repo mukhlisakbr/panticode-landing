@@ -1,10 +1,9 @@
+import { TechLogo } from './../components/TechLogo'
+import { HeroImage } from '../components/HeroImage'
+import { FindUs } from './../components/FindUs'
+import { HeaderLogo } from './../components/HeaderLogo'
 import type { NextPage } from 'next'
-import Image from 'next/image'
-import Logo from './../public/logo.png'
-import GooglePlayIcon from './../public/google-play-icon.png'
-import Hero from './../public/hero.png'
-import ReactNativeLogo from './../public/react-native.png'
-import ExpoLogo from './../public/expo.png'
+
 import { NextSeo } from 'next-seo'
 
 const Home: NextPage = () => {
@@ -18,44 +17,16 @@ const Home: NextPage = () => {
         <div className="mx-auto max-w-7xl px-8 py-12">
           <nav className="flex items-center justify-between">
             <div className="relative flex h-14 w-44 justify-start md:h-20 md:w-64">
-              <a href="#">
-                <Image
-                  src={Logo}
-                  alt="Logo"
-                  objectFit="contain"
-                  layout="fill"
-                ></Image>
-              </a>
+              <HeaderLogo />
             </div>
             <div className="">
-              <a
-                href="https://play.google.com/store/apps/dev?id=6540392924092933918"
-                target={'_blank'}
-                rel="noreferrer"
-              >
-                <button className="flex items-center gap-2 rounded-full bg-gradient-to-r from-blue-400 to-emerald-400 px-4 py-2 text-base font-bold tracking-tight text-gray-50 md:py-3 md:px-8 md:text-2xl">
-                  <span className="relative h-4 w-4 md:h-8 md:w-8">
-                    <Image
-                      src={GooglePlayIcon}
-                      alt="Icon"
-                      objectFit="contain"
-                      layout="fill"
-                    ></Image>
-                  </span>
-                  <span>find us.</span>
-                </button>
-              </a>
+              <FindUs />
             </div>
           </nav>
           <main className="mt-20 flex items-center md:mt-28">
             <div className="flex-col text-gray-50 sm:w-full md:w-6/12">
               <div className="w-44 justify-end md:hidden">
-                <Image
-                  src={Hero}
-                  alt="Hero"
-                  width={500}
-                  objectFit="contain"
-                ></Image>
+                <HeroImage />
               </div>
               <div className="font-heading text-4xl font-bold md:text-7xl">
                 <h1>We make</h1>
@@ -71,42 +42,12 @@ const Home: NextPage = () => {
                   POWERED BY THE LATEST TECHNOLOGY IN THE INDUSTRY
                 </div>
                 <div className=" mt-4 flex gap-2 ">
-                  <a
-                    href="https://reactnative.dev/"
-                    target={'_blank'}
-                    rel="noreferrer"
-                    className="relative h-10 w-10  md:h-16 md:w-16"
-                  >
-                    <Image
-                      src={ReactNativeLogo}
-                      alt="React Native"
-                      layout="fill"
-                      objectFit="contain"
-                    ></Image>
-                  </a>
-                  <a
-                    href="https://expo.dev/"
-                    target={'_blank'}
-                    rel="noreferrer"
-                    className="relative h-10 w-10  md:h-16 md:w-16"
-                  >
-                    <Image
-                      src={ExpoLogo}
-                      alt="Expo"
-                      layout="fill"
-                      objectFit="contain"
-                    ></Image>
-                  </a>
+                  <TechLogo />
                 </div>
               </div>
             </div>
             <div className="hidden w-6/12 justify-end md:flex">
-              <Image
-                src={Hero}
-                alt="Hero"
-                width={500}
-                objectFit="contain"
-              ></Image>
+              <HeroImage />
             </div>
           </main>
           <footer className="mt-12 flex justify-end gap-2 text-xs tracking-widest  text-gray-400 md:text-base">
