@@ -14,7 +14,7 @@ const Home: NextPage = () => {
         description="We make cool & fast apps. Committed to helping people with useful free apps."
       />
       <div className="min-h-screen bg-black">
-        <div className="mx-auto max-w-7xl px-8 py-12">
+        <div className="mx-auto max-w-6xl px-8 py-12">
           <nav className="flex items-center justify-between">
             <div className="relative flex h-14 w-44 justify-start md:h-20 md:w-64">
               <HeaderLogo />
@@ -23,8 +23,8 @@ const Home: NextPage = () => {
               <FindUs />
             </div>
           </nav>
-          <main className="mt-20 flex items-center md:mt-28">
-            <div className="flex-col text-gray-50 sm:w-full md:w-6/12">
+          <main className="mt-20 flex items-center">
+            <div className="flex-col text-gray-50 sm:w-full md:w-7/12">
               <div className="w-44 justify-end md:hidden">
                 <HeroImage />
               </div>
@@ -46,7 +46,7 @@ const Home: NextPage = () => {
                 </div>
               </div>
             </div>
-            <div className="hidden w-6/12 justify-end md:flex">
+            <div className="hidden w-5/12 justify-end md:flex">
               <HeroImage />
             </div>
           </main>
